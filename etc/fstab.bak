@@ -1,0 +1,13 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda3
+UUID=033c8d32-50de-45e7-8d81-572a8df0e37a	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sda2
+UUID=0330834a-7720-4519-b1b0-08be3e9080fe	/var      	reiserfs  	rw,relatime	0 2
+
+# /dev/sda1
+UUID=1f15c6c8-c538-474d-8829-f56d6b92b8dd	none      	swap      	defaults  	0 0
+

@@ -1,0 +1,6 @@
+## Based on a copy of /etc/customizepkg.d/qemu.example
+
+add#source#'https:\\/\\/github.com\\/archhurd\\/packages\\/raw\\/master\\/extra\\/rxvt-unicode-256color\\/font-width-fix.patch'
+add#md5sums#'df0c3a8b6bb0578d1b91e4081c47881c'
+replace#global#.\\/configure#patch -p0 -i ..\\/font-width-fix.patch\\n  .\\/configure
+
