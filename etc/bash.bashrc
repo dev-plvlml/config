@@ -43,10 +43,28 @@ set_prompt() {
     
     PS1="${Default}\342\224\214[${BoldColor}\u${Color}@${BoldColor}\h${Default} ${BoldBlue}\w${Default}]\n"
     PS1+="${Default}\342\224\224\342\224\200${BoldColor}\$${Default} "
-    PS2="${Default}  \342\224\224\342\224\200${BoldColor}>${Default} "
+    PS2="${Default}\342\224\224\342\224\200${BoldColor}>${Default} "
 }
 
 set_prompt
+
+## Use coreutils with colorized output
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias dir='dir --color=auto'
+alias dmesg='dmesg --color'
+alias diff='colordiff'
+alias tree='tree -C'
+
+## Use less with source-highlight...
+# export LESSOPEN="| source-highlight-esc.sh %s"
+
+## ...or use less with lesspipe
+# export LESSOPEN="| lesspipe.sh %s" # NOTE: /etc/profile.d/lesspipe.sh
+export LESS=' -R '
+
+## Use less with GNU Global tags
+export LESSGLOBALTAGS=global
 
 case ${TERM} in
   xterm*|rxvt*|Eterm|aterm|kterm|gnome*)

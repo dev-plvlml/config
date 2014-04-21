@@ -11,12 +11,8 @@ umask 022
 PATH="/usr/local/sbin:/usr/local/bin:/usr/bin"
 export PATH
 
-## Use gcc with ccache enabled
-# PATH=/usr/lib/ccache/bin/:$PATH
-
 ## Use gcc with colorgcc enabled
 PATH=/usr/lib/colorgcc/bin/:$PATH
-export CCACHE_PATH=/usr/bin/
 
 # Load profiles from /etc/profile.d
 if test -d /etc/profile.d/; then
