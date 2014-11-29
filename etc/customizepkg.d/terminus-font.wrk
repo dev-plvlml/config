@@ -1,0 +1,1 @@
+replace#global#'cd \"\$pkgname-\$pkgver\"'#'cd "$pkgname-$pkgver" && patch -i alt/dv1.diff && patch -i alt/ij1.diff && patch -i alt/ll2.diff && patch -i alt/td1.diff'
