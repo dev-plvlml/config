@@ -12,4 +12,4 @@ UUID=0330834a-7720-4519-b1b0-08be3e9080fe	/var      	reiserfs  	rw,relatime,nota
 UUID=1f15c6c8-c538-474d-8829-f56d6b92b8dd	none      	swap      	noauto  	0 0
 
 #/tmp
-tmpfs   	/tmp    	tmpfs   	rw,nodev,nosuid,size=2G    	0 0
+tmpfs   	/tmp    	tmpfs   	rw,nodev,nosuid,size=4G    	0 0
